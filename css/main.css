@@ -1,0 +1,101 @@
+body {font-family:Helvetica, Arial, Sans-serif}
+
+#header {text-align:center; margin-bottom:60px;}
+
+#header h1 {
+	height:72px;
+	text-indent:-9999px;
+	background:url('../resources/logo.png') no-repeat center center;
+}
+
+#loading, #login a {
+	display:block;
+	width: 200px; 
+	padding:1em; margin:3em auto 0 auto; 
+	background: #eee;
+	border-radius: 5px;
+	text-align:center; 
+	font-size:18px;
+	font-weight:bold;
+	color: #444; 
+	text-transform: lowercase;
+}
+#loading img {display:block; width:16px; margin:.25em auto 0 auto;}
+#loading span {display:block; margin-top:1em; font-size:70%; font-weight:normal;}
+#login a {
+	text-decoration:none;
+	background:#444;
+	color:#fff;
+}
+#login a:hover {
+	background:#999; 
+	margin-top:2.9em;
+	text-shadow:0 1px black;
+	-webkit-box-shadow:0 3px 8px rgba(0,0,0,.2);
+}
+#login a:active {background:#222; margin-top:3.1em;}
+
+
+
+
+.section {text-align:center; margin-bottom:20px;}
+.section div {
+	display:inline-block;
+	position:relative;
+	width:6%;
+	padding:0 10px;
+	text-align:center;
+}
+.section div .friend_count {
+	background:#ccc;
+	display:block;
+	padding-top:5px; margin:0;
+	font-size:200%;
+	font-weight:bold;
+	color:#777;
+	text-shadow:0 1px 0 rgba(255,255,255,.75);
+}
+.section div .friend_count span {
+	display:block;
+	margin-top:-.3em;
+	font-weight:normal; 
+	font-size:50%; 
+	font-variant:small-caps;
+}
+
+.section div .friend_list {
+	position:absolute;
+	display:none;
+	width:130px;
+	background:#fff; opacity:.9;
+	padding:10px; margin:0;
+	/*top:10px; left:20px; z-index:1;*/
+	top:45px; left:-30px; z-index:1;
+	-webkit-box-shadow:0 5px 15px rgba(0,0,0,.3);
+	border-radius:5px;
+	font-size:80%;
+	text-align:left;
+	list-style-type:none;
+}
+.section div:hover .friend_list {display:block;}
+.section div .friend_list li {line-height:1.25em; display:table-row;}
+.section div .friend_list li .day {
+	display:table-cell; 
+	font-weight:bold; 
+	padding-right:.5em; 
+	text-align:right;
+}
+.section div .friend_list li .month {display:table-cell;}
+
+.section div .month, .section div .year {text-transform:capitalize;}
+
+
+
+
+#by_year div {
+	width:5%;
+}
+
+#by_year div .friend_count {
+	font-size:170%;
+}
